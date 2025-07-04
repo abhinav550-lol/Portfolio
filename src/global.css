@@ -1,1 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+
 @import "tailwindcss";
+
+/* Fonts */
+
+.font-term{
+	font-family: "Source Code Pro", monospace;
+	color: #199819;
+}
+
+
+
+/* Scroll Settings */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #96989a; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000; 
+  border-radius: 4px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #d1d5db;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #374151;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #96989a; 
+  }
+
+  body {
+    scrollbar-color: #96989a #374151;
+  }
+}
